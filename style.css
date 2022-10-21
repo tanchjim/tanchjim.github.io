@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding:0;
+  border: 0;
+}
+body{
+  background-color: #ebfeff;
+}
+#bar{
+  width: 100%;
+  padding:2%;
+  background-color:#F7F6FC;
+}
+#bar button{
+  width: 30%;
+  margin:0 7%;
+  padding: 1%;
+}
+#showBtn{
+  color: #f2f2f3;
+  background-color: #8ce0e6;
+  border-radius: 50px;
+}
+#writeBtn{
+  color:#8ce0e6;
+  background-color: #F7F7F7;
+}
+/* æ˜¾ç¤ºå¡ç‰‡ */
+#msgShow{
+  width:86%;
+  margin:5%;
+  padding:2%;
+  color:#0a0a0a93;
+  background-color: #8ce0e6;
+  border-radius: 18px;
+  box-shadow: gray 1px 2px 2px;
+}
+#stateDiv{
+  width: 100%;
+  text-align: right;
+}
+
+/* è‡ªå®šä¹‰å¼¹çª— */
+
+#myPopup2{
+  width:70%;
+  height:130px;
+  border: 1px solid #000000;
+  background-color: #f2f2f3;
+  margin:auto;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 10;
+  opacity: 0.8;
+}
+#myPopup2 p{
+  text-align: center;
+  margin:5% 0;
+}
+
+#myPopup2 button:hover{
+  opacity: 0.5;
+}
+
+
+#OK{
+  width: 20%;
+  margin:0 40%;
+  border:1px solid #808080;
+  background-color: #8ce0e6;
+}
