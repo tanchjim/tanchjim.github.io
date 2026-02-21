@@ -1,0 +1,296 @@
+/* Material UI Inspired Styles */
+
+:root {
+    --primary-color: #1976D2;
+    --primary-dark: #1565C0;
+    --text-primary: #212121;
+    --text-secondary: #757575;
+    --background: #FAFAFA;
+    --surface: #FFFFFF;
+    --divider: #E0E0E0;
+    --shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+    --radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--background);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+.header {
+    background: var(--primary-color);
+    color: white;
+    padding: 16px 0;
+    box-shadow: var(--shadow);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 32px 0;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+}
+
+/* Timeline / Post Cards */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.post-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px 24px;
+    display: flex;
+    gap: 24px;
+    transition: box-shadow 0.2s;
+}
+
+.post-card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.post-card .post-meta {
+    flex-shrink: 0;
+    width: 100px;
+}
+
+.post-card .post-date {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.post-card .post-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.post-card .post-title a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.post-card .post-title a:hover {
+    color: var(--primary-color);
+}
+
+.post-card .post-excerpt {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Single Post */
+.post {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 32px;
+}
+
+.post-header {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--divider);
+}
+
+.post-header .post-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.post-header .post-date {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.post-categories {
+    margin-top: 8px;
+}
+
+.category {
+    display: inline-block;
+    background: #E3F2FD;
+    color: var(--primary-color);
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.post-content {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.post-content h1, .post-content h2, .post-content h3 {
+    margin: 24px 0 16px;
+    font-weight: 500;
+}
+
+.post-content h2 {
+    font-size: 22px;
+}
+
+.post-content h3 {
+    font-size: 18px;
+}
+
+.post-content p {
+    margin-bottom: 16px;
+}
+
+.post-content ul, .post-content ol {
+    margin-bottom: 16px;
+    padding-left: 24px;
+}
+
+.post-content li {
+    margin-bottom: 8px;
+}
+
+.post-content code {
+    background: #F5F5F5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.post-content pre {
+    background: #263238;
+    color: #ECEFF1;
+    padding: 16px;
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin-bottom: 16px;
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.post-content a {
+    color: var(--primary-color);
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+.post-content blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 16px;
+    margin: 16px 0;
+    color: var(--text-secondary);
+}
+
+.post-footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--divider);
+}
+
+.back-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: var(--surface);
+    padding: 24px 0;
+    margin-top: auto;
+    border-top: 1px solid var(--divider);
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* Empty */
+.empty-message {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 48px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .post-card {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .post-card .post-meta {
+        width: auto;
+    }
+    
+    .post {
+        padding: 20px;
+    }
+    
+    .post-header .post-title {
+        font-size: 22px;
+    }
+}
