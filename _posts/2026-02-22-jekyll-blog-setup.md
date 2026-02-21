@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll 博客搭建记录"
-date: 2026-02-21
+date: 2026-02-22 00:57:00 +0800
 categories: [技术]
 ---
 
